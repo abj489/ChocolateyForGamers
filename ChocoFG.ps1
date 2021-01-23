@@ -1,17 +1,13 @@
 $chkChoco = 'C:\ProgramData\chocolatey'
-$chkBrave = "C:\Users\$env:username\AppData\Local\BraveSoftware"
 $chkDiscord = "C:\Users\$env:username\AppData\Local\Discord"
 $chkEpic = 'C:\Program Files (x86)\Epic Games'
-$chkFaceIT = "C:\Users\$env:username\AppData\Local\FACEITApp"
 $chkOrigin = 'C:\Program Files (x86)\Origin\Origin.exe'
-$chkVPN = 'C:\Program Files (x86)\Proton Technologies\ProtonVPN'
-$chkFences = 'C:\Program Files (x86)\Stardock\Fences'
 $chkSteam = 'C:\Program Files (x86)\Steam\'
 $chkUplay = 'C:\Program Files (x86)\Ubisoft\'
-$allPKG = $chkBrave, $chkDiscord, $chkEpic, $chkFaceIT, $chkOrigin, $chkVPN, $chkFences,$chkSteam ,$chkUplay 
+$allPKG = $chkDiscord, $chkEpic, $chkOrigin, $chkVPN,$chkSteam ,$chkUplay 
 $evalPKG = Test-Path $allPKG
 $evalChoco = Test-Path $chkChoco
-$pkgInstall = 'brave', 'discord', 'epicgameslauncher', 'Faceit', 'origin', 'protonvpn','stardock-fences','steam', 'uplay'
+$pkgInstall = 'discord', 'epicgameslauncher', 'origin', 'protonvpn','steam', 'uplay'
 $i = 0
 
 function Install-Chocolatey {
