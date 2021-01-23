@@ -1,7 +1,7 @@
 $chkChoco = 'C:\ProgramData\chocolatey'
 $chkDiscord = "C:\Users\$env:username\AppData\Local\Discord"
 $chkEpic = 'C:\Program Files (x86)\Epic Games'
-$chkOrigin = 'C:\Program Files (x86)\Origin\Origin.exe'
+$chkOrigin = 'C:\Program Files (x86)\Origin\'
 $chkSteam = 'C:\Program Files (x86)\Steam\'
 $chkUplay = 'C:\Program Files (x86)\Ubisoft\'
 $allPKG = $chkDiscord, $chkEpic, $chkOrigin, $chkSteam , $chkUplay 
