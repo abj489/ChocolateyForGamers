@@ -4,10 +4,10 @@ $chkEpic = 'C:\Program Files (x86)\Epic Games'
 $chkOrigin = 'C:\Program Files (x86)\Origin\Origin.exe'
 $chkSteam = 'C:\Program Files (x86)\Steam\'
 $chkUplay = 'C:\Program Files (x86)\Ubisoft\'
-$allPKG = $chkDiscord, $chkEpic, $chkOrigin, $chkVPN, $chkSteam , $chkUplay 
+$allPKG = $chkDiscord, $chkEpic, $chkOrigin, $chkSteam , $chkUplay 
 $evalPKG = Test-Path $allPKG
 $evalChoco = Test-Path $chkChoco
-$pkgInstall = 'discord', 'epicgameslauncher', 'origin', 'protonvpn', 'steam', 'uplay'
+$pkgInstall = 'discord', 'epicgameslauncher', 'origin', 'steam', 'uplay'
 $i = 0
 <#
 .DESCRIPTION
