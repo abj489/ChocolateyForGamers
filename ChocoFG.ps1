@@ -18,9 +18,9 @@ function Install-Chocolatey {
   elseif ($evalChoco -eq $false) {
       Write-Host "Chocolatey is not installed... Running chocolatey install script."
       Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-  }
-    
+  }  
 }
+
 function Install-Apps {
   foreach ($pkgName in $pkgInstall){
     if($pkgName -eq $pkgInstall[$i] -And $evalPKG[$i] -eq $true) {
@@ -31,8 +31,5 @@ function Install-Apps {
         choco install $pkgName -y
         $i++
     }
-
-
-
   }
 }
