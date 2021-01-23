@@ -1,8 +1,8 @@
 $chkChoco = 'C:\ProgramData\chocolatey'
-$chkBrave = 'C:\Users\abjor\AppData\Local\BraveSoftware'
-$chkDiscord = 'C:\Users\abjor\AppData\Local\Discord'
+$chkBrave = "C:\Users\$env:username\AppData\Local\BraveSoftware"
+$chkDiscord = "C:\Users\$env:username\AppData\Local\Discord"
 $chkEpic = 'C:\Program Files (x86)\Epic Games'
-$chkFaceIT = 'C:\Users\abjor\AppData\Local\FACEITApp'
+$chkFaceIT = "C:\Users\$env:username\AppData\Local\FACEITApp"
 $chkOrigin = 'C:\Program Files (x86)\Origin\Origin.exe'
 $chkVPN = 'C:\Program Files (x86)\Proton Technologies\ProtonVPN'
 $chkFences = 'C:\Program Files (x86)\Stardock\Fences'
